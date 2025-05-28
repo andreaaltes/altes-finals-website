@@ -1,0 +1,251 @@
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Hot Wheels Toys - Products</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto&display=swap');
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #050b25;
+    color: #e0e6ff;
+    line-height: 1.6;
+  }
+
+  a {
+    color: #f0a500;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  a:hover {
+    color: #ffce00;
+  }
+
+  header {
+    background: #021229;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.7);
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+    padding: 1rem 2rem;
+  }
+
+  nav .logo {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.8rem;
+    color: #f0a500;
+    letter-spacing: 2px;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.3rem;
+  }
+
+  nav ul li {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  nav ul li a {
+    padding: 0.25rem 0.5rem;
+  }
+
+  nav ul li a.active,
+  nav ul li a:hover {
+    border-bottom: 2px solid #ffce00;
+  }
+
+  main {
+    padding-top: 130px; /* for fixed header */
+    max-width: 1100px;
+    margin: 2rem auto 5rem;
+  }
+
+  h1 {
+    font-family: 'Orbitron', sans-serif;
+    color: #f0a500;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(230px,1fr));
+    gap: 1.5rem;
+  }
+
+  .product {
+    background: #0a1450;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 15px #111f81;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+
+  .product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #f0a500;
+  }
+
+  .product img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-bottom: 2px solid #ffce00;
+  }
+
+  .product h4 {
+    color: #ffce00;
+    margin: 0.8rem 0 0.4rem;
+  }
+
+  .product p {
+    font-size: 0.9rem;
+    color: #c7cbe9;
+    margin: 0 0 0.8rem;
+  }
+
+  footer {
+    background: #021229;
+    color: #707caa;
+    text-align: center;
+    padding: 1.2rem 1rem;
+    font-size: 0.9rem;
+    border-top: 1px solid #0f1f8a;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+
+  @media(max-width: 600px) {
+    nav ul {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    nav ul li {
+      font-size: 0.9rem;
+    }
+    main {
+      margin: 1rem;
+      padding-top: 130px;
+    }
+  }
+</style>
+</head>
+<body>
+<header>
+  <nav>
+    <div class="logo">HOT WHEELS</div>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="mission.html">Mission & Vision</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="products.html" class="active">Products</a></li>
+      <li><a href="faqs.html">FAQs</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="designer-profile.html">Designer Profile</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <h1>Products</h1>
+  <div class="product-list">
+    <div class="product">
+      <img src="https://scontent.fmnl8-6.fna.fbcdn.net/v/t39.30808-6/500231714_2529792254022444_8306201551660807389_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHdrlIzjIyhqz3_cNVzetRDSimmBtw3BFZKKaYG3DcEVjKwVdFwSll9wxKXLvAYvyDNZn2IrhiIlrliQj7nlJz-&_nc_ohc=KQKDvx_FfUYQ7kNvwEThhLx&_nc_oc=AdmuIU_uCV5e4R_BVLY_3XaxYPh0iwski79DTqrM17neBwbPc2WhtZqeYwJZxzg45KI&_nc_zt=23&_nc_ht=scontent.fmnl8-6.fna&_nc_gid=2_bZsbgscV0CO2Pt8sV5aQ&oh=00_AfL9fYbt8-nMDsa2EM1debJiJ73wwlFbb9-RevrJwqTReQ&oe=683B9EF1" alt="Rocket Racers Red" />
+      <h4>Rocket Racers Red</h4>
+      <h4> ₱755.00 <h/4>
+      <p>High-speed racer with flame decals and sleek aerodynamic design.</p>
+      
+    </div>
+    <div class="product">
+      <img src="https://scontent.fmnl8-3.fna.fbcdn.net/v/t39.30808-6/501004960_2529799510688385_1585806453472435849_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGKruNvGWsFgQvDWKogkNFK5eTJ21XYXubl5MnbVdhe5h1d3u7hTEmjrraeStZZGqFPvTgHlzvniAqO0zgTWBkb&_nc_ohc=g19imZSd4dcQ7kNvwEMRjhR&_nc_oc=AdkdSfcIoIpEd9HJqq9k2n9LHcFWH7IcVjTT_NozzK3TDVBfIU8Es4R-L62UDFkrn60&_nc_zt=23&_nc_ht=scontent.fmnl8-3.fna&_nc_gid=LUfvsmwVj5ZeqI3Ym3zjLg&oh=00_AfJ6OAO9BoNv1VNx3IXlSm-C0hG1Mn9b3zDNeUxaTU68pA&oe=683B9F39" alt="Porsche GT4" />
+      <h4>Porsche GT4</h4>
+      <h4> ₱755.00 <h/4>
+      <p>Replica of the iconic Porsche GT4 perfect for collectors and racers.</p>
+      
+    </div>
+    <div class="product">
+      <img src="https://scontent.fmnl8-1.fna.fbcdn.net/v/t39.30808-6/501060393_2529795717355431_4675894085861567622_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHTGf6Rwl27UMthSNfHlX4vR2dX1HolyY9HZ1fUeiXJj840-xQ1UeGEn2V_PqtqQXp8u-Jja3ZukkE9tqK2J90F&_nc_ohc=fDKuLE_XXAUQ7kNvwG8Hoxx&_nc_oc=Adnxh1oGFqN3rUDmS3f1cc1TpIjyp6Oxfy5JFTqGw3594fnWrKSYf_EiHVYU_VvSzwo&_nc_zt=23&_nc_ht=scontent.fmnl8-1.fna&_nc_gid=pcIHGk_1nZc4XKIlo3v-6A&oh=00_AfIMBi5n6vgE2wlbfb25ahBUFG6MTw-WQIFKxr4aGR3DQA&oe=683B83D0" alt="Classic Muscle" />
+      <h4>Classic Muscle</h4>
+      <h4> ₱2,221.64 <h/4>
+      <p>A tribute to vintage muscle cars with powerful engine detail.</p>
+      
+    </div>
+    <div class="product">
+      <img src="https://scontent.fmnl8-3.fna.fbcdn.net/v/t39.30808-6/500900742_2529804660687870_8308234881939795610_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeF1AYeekS8huoeipKfBQEDd0pw8Ill4VKnSnDwiWXhUqeL8vgDYLLD0RINuHfBpocVg8DPUmcROvSvfT2dzvnjy&_nc_ohc=Iwk9VMr9usEQ7kNvwG-LYQu&_nc_oc=AdlQJ_ct5dDFqxfDl4SoaO9TpYt9J4Qq1UNBnstjlxmgeHtzOtycdPDQVNVRnWNlkWI&_nc_zt=23&_nc_ht=scontent.fmnl8-3.fna&_nc_gid=93cC3WFeU6q14aG6ERKLVA&oh=00_AfJJdtJmV_I2WVkizwndtuzvzKoWhCdgQ10hEBVLaLNcQg&oe=683BA5F9" alt="Fantasy Racer" />
+      <h4>Fantasy Racer</h4>
+      <h4> ₱366.13 <h/4>
+      <p>Futuristic Hot Wheels fantasy racer with bold styling and unique design.</p>
+    </div>
+    <div class="product">
+      <img src="https://scontent.fmnl8-3.fna.fbcdn.net/v/t39.30808-6/500727479_2529813057353697_8494266475590836033_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeF_pU_Vsxidglusg9IFOzU67lUqtQ1D94XuVSq1DUP3hWFR9L-Yw52XyeZbua-zjy2CPY9knCnX5yU4N97g4MJo&_nc_ohc=4tG9XSxPHeAQ7kNvwEsJB2j&_nc_oc=AdlF4hi5B_ev7HIf7fjry0QuR4R1ngpkmaP6KRZEb2WIAQEuQhkxUnPB-k_G4eAQ_cQ&_nc_zt=23&_nc_ht=scontent.fmnl8-3.fna&_nc_gid=ETiK0CrtqKOGvqHw8Z2JEA&oh=00_AfJViYK-LPW3vmLYqGA8Su5jkv5SWMvd7AZOoTb9ubLM2g&oe=683BA6C4" alt="Dragster" />
+      <h4>Dragster</h4>
+      <h4> ₱665.59 <h/4>
+      <p>Powerful drag racing car model with flame decals and exposed engine.</p>
+    </div>
+    <div class="product">
+      <img src="https://scontent.fmnl8-3.fna.fbcdn.net/v/t39.30808-6/500219457_2529817644019905_5696047474729118970_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHN6zA2VWGOpHe4fQ7mNhhukJ6iwidprmCQnqLCJ2muYPqPXFBD00DRWgZnIGtkeFDUyAjFkMk052zMgkxha_yr&_nc_ohc=zS2S6PPnmO0Q7kNvwGgeeww&_nc_oc=AdlfO3K0q8XCPPIpSd3QsdD7mt3sQ6sE3cYVk35_QwiC4kquMMIolKQO2uutEO8ifeE&_nc_zt=23&_nc_ht=scontent.fmnl8-3.fna&_nc_gid=i3QdHzkww0MhZmhXoYvJ8Q&oh=00_AfJVbKiaKYONsy9d_bK3qHrVteqP4c_UmoGt_U8Fiemgew&oe=683BB8B2" alt="Sports Car" />
+      <h4>Sports Car</h4>
+      <h4> ₱2,536.59 <h/4>
+      <p>High-performance sports car model with sleek red and black design.</p>
+    </div>
+      
+      <div class="product">
+      <img src="https://scontent.fmnl8-3.fna.fbcdn.net/v/t39.30808-6/500750691_2529824007352602_4433286568063054308_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFiNEyqctfSCNrnpXAkUBq0QFz4egOGvQ9AXPh6A4a9D7Dixw7MNaP4uVh01iYM0DUJ3JfLxZ1EVre49Nq3GS_E&_nc_ohc=-2rUuZUdFYkQ7kNvwHc3mDy&_nc_oc=Adlp7CikMKl8xOxyVQ66KOv7TrDG25BoJSwoRScCTQnv8FLqghWdqoG-kE_j-gdUrvk&_nc_zt=23&_nc_ht=scontent.fmnl8-3.fna&_nc_gid=urPesVdpyg4B_t--iwYouw&oh=00_AfIyMrMq53xRR1QpMse9Wr_JlgC_xHqRQ2IxsDDJxqoJzg&oe=683BAEBA" alt="Hot Wheel Coupe" />
+      <h4>Hot Wheels Coupe</h4>
+      <h4> ₱554.47 <h/4>
+      <p>Classic coupe model with sporty detailing and chrome accents.</p>
+    </div>
+      <div class="product">
+      <img src="https://scontent.fmnl8-4.fna.fbcdn.net/v/t39.30808-6/500037169_2529829044018765_3715480212540004737_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGrxBhSRaP9G8VgMqc2WGslYHFCgFnYUL5gcUKAWdhQvuKT5Hatx3Ovq8lc9dA-lDnCs-EmCslEye2nmyhGg2p5&_nc_ohc=oNvGmH_Nc8oQ7kNvwETfyv8&_nc_oc=AdnqW_4z8LUXnu3AzGDXGz2iiX9HIQtpCwOa1meeJrAjBWH5p1K0KXihp_tacAEHP6A&_nc_zt=23&_nc_ht=scontent.fmnl8-4.fna&_nc_gid=5XTgESKJ-3rWTbWvBhUpFw&oh=00_AfJb126X-gjioaPnpjcXjwyjWZBnBMRKRQe4711aIgL7Eg&oe=683B9DAD" alt="Monster Truck" />
+      <h4>Monster Truck</h4>
+      <h4> ₱1,288.00 <h/4>
+      <p>Large monster truck toy with oversized tires ready for action.</p>
+    </div>
+      <div class="product">
+      <img src="https://scontent.fmnl8-2.fna.fbcdn.net/v/t39.30808-6/500014154_2529830737351929_3144709365448098282_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHkiSwVQPfmyJds8e6OsWK49djiTspR3EP12OJOylHcQ0ALXU_U4Qlb1auLTEYgKr4wo32sA9TP95MOa0BVtG3S&_nc_ohc=hTxiik5nVpcQ7kNvwF3J6fB&_nc_oc=AdnbecxQJsjMLmjPgRiVoYCYuIMq2lDnSyYsGbGGot0I92MLGIgUeMsggKP5l4A4UCs&_nc_zt=23&_nc_ht=scontent.fmnl8-2.fna&_nc_gid=GQhikJYnuFnV7OzhNZaTqw&oh=00_AfJrDexl_yEVBrFu5L9GjoJRtVagIYtac9_O9mEhadVoyw&oe=683BA11C" alt="Racer Blue" />
+      <h4>Racer Blue</h4>
+      <h4> ₱1,288.00 <h/4>
+      <p>Sleek blue racer with aerodynamic shape and decals.</p>
+    </div>
+      <div class="product">
+      <img src="https://scontent.fmnl8-2.fna.fbcdn.net/v/t39.30808-6/500060501_2529821800686156_7755860083000346368_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFk_JvKVv3pz90TewrMyYr6W5qTztDJiGpbmpPO0MmIatf4bNMvxOCmStWZKrKq3i3LP_7UZI3821uuoeUQZsYA&_nc_ohc=eX_5Rn4T0eEQ7kNvwHXqa9n&_nc_oc=Adkfiw0bnXlpJ_lLxHQFJJnk4djx6DRiTcayLRVzYBYucEMSZPjGgoI36h-l3pTP_K8&_nc_zt=23&_nc_ht=scontent.fmnl8-2.fna&_nc_gid=Z-b8zcKZEq0PXeP3lf8DEg&oh=00_AfK_tW7wi3tYoXXlezq0t5zdv1-5FPCMYsq6Oz3aaQwFuA&oe=683B8D0B" alt="Fast Truck" />
+      <h4>Fast Truck/h4>
+      <h4> ₱1,299.00 <h/4>
+      <p>Sleek blue racer with aerodynamic shape and decals.</p>
+    </div>
+      
+      
+  </div>
+</main>
+<footer>
+  &copy; 2025 Hot Wheels Toys. All rights reserved. 
+</footer>
+</body>
+</html>

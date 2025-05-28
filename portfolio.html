@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Hot Wheels Toys - Portfolio</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto&display=swap');
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #050b25;
+    color: #e0e6ff;
+    line-height: 1.6;
+  }
+  a {
+    color: #f0a500;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  a:hover {
+    color: #ffce00;
+  }
+  header {
+    background: #021229;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.7);
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+    padding: 1rem 2rem;
+  }
+  nav .logo {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.8rem;
+    color: #f0a500;
+    letter-spacing: 2px;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.3rem;
+  }
+  nav ul li {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  nav ul li a {
+    padding: 0.25rem 0.5rem;
+  }
+  nav ul li a.active,
+  nav ul li a:hover {
+    border-bottom: 2px solid #ffce00;
+  }
+  main {
+    padding-top: 130px; /* for fixed header */
+    max-width: 1100px;
+    margin: 2rem auto 5rem;
+  }
+  h1 {
+    font-family: 'Orbitron', sans-serif;
+    color: #f0a500;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+  }
+  .card {
+    background: #07114a;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 0 15px #0f1f8a;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+  }
+  .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 25px #f0a500;
+  }
+  .card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 0.8rem;
+    height: 140px;
+    object-fit: cover;
+  }
+  .card h3 {
+    color: #ffce00;
+    margin-bottom: 0.5rem;
+  }
+  .card p {
+    color: #c7cbe9;
+    font-size: 1rem;
+  }
+  footer {
+    background: #021229;
+    color: #707caa;
+    text-align: center;
+    padding: 1.2rem 1rem;
+    font-size: 0.9rem;
+    border-top: 1px solid #0f1f8a;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  @media(max-width: 600px) {
+    nav ul {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    nav ul li {
+      font-size: 0.9rem;
+    }
+    main {
+      margin: 1rem;
+      padding-top: 130px;
+    }
+  }
+</style>
+</head>
+<body>
+<header>
+  <nav>
+    <div class="logo">HOT WHEELS</div>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="mission.html">Mission & Vision</a></li>
+      <li><a href="portfolio.html" class="active">Portfolio</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="faqs.html">FAQs</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="designer-profile.html">Designer Profile</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <h1>Portfolio</h1>
+  <div class="cards">
+    <div class="card">
+      <img src="https://scontent.fmnl8-1.fna.fbcdn.net/v/t39.30808-6/500285509_2529570994044570_5854645869127519530_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHamQyfxPp6yYZsRoyfb2LAomxNiC7QWqKibE2ILtBaoq-4T7WeJqYTslxfSbh-axG4_Nm6gWjjE2iWgCWh-QWn&_nc_ohc=NugVcx4fcEMQ7kNvwElQYBp&_nc_oc=Adkm1MSu6SEbA-G7hs-deCjPEQyZHlq-4qwvJxtCtKs35gs7R2ZkxloHCJWAyGxMeJk&_nc_zt=23&_nc_ht=scontent.fmnl8-1.fna&_nc_gid=n2LXdIYXFhiAn4IXgKgNFw&oh=00_AfJXK4wEFBFeEBwnFbXIm_8ALvnO4zpgOyJMZ3csxxbR5A&oe=683B35FD" alt="Classic Muscle Car" />
+      <h3>Classic Muscle</h3>
+      <p>Iconic vintage muscle cars recreated with attention to every detail.</p>
+    </div>
+    <div class="card">
+      <img src="https://scontent.fmnl8-4.fna.fbcdn.net/v/t39.30808-6/500315240_2529567554044914_7704811304862389137_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFXBzQVx11rJrvHItgfsoNvkZVdvtkzNqGRlV2-2TM2oXBBNuY0uZvWHdz952XioaFC5QklLeHKeEwD49nfqkhV&_nc_ohc=pfIL7x2DrLEQ7kNvwG63tQk&_nc_oc=AdlhSPwDPCtMSr3mkvfO0heI2XwRJhsZPflBoVibQ-q53s4xInHTOPwfjsSOWeHByIg&_nc_zt=23&_nc_ht=scontent.fmnl8-4.fna&_nc_gid=4c-H6undOlC7ydV43YbsCQ&oh=00_AfLZSdDWTnSPM7cAf5x98h5TXvVuYzAOPwBId2jcFSenaA&oe=683B3ECC" alt="Porsche GT4" />
+      <h3>Porsche GT4</h3>
+      <p>Sleek and sporty modern sports car model with precise design.</p>
+    </div>
+    <div class="card">
+      <img src="https://scontent.fmnl8-3.fna.fbcdn.net/v/t39.30808-6/501197729_2529568697378133_4013357457060641292_n.webp?stp=dst-jpg_tt6&_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEGmLE1rS-UDJjgwG9GtOM3KP4C2ZZXa3so_gLZlldre7OllLJthz-3vWxOcUo5LrZw8OF650CB1FXtvAh8VVya&_nc_ohc=wOv-VjySB7wQ7kNvwEdQn9Y&_nc_oc=AdllxjOFJnhGYOw1wSZU7yqxhKjy2wHVVECKT9T1VPd_LRhjpHz1P2h0UktqaLN-G9w&_nc_zt=23&_nc_ht=scontent.fmnl8-3.fna&_nc_gid=x5uXb1JodxVgU-WPf016Ww&oh=00_AfK-GkpoWYBLUsDNwtBS1qlOEpLbwmnuZM_hmI1zctqFMQ&oe=683B41D3" alt="Rocket Racer Red" />
+      <h3>Rocket Racer Red</h3>
+      <p>Futuristic high-speed racer with flame decals and aerodynamic styling.</p>
+    </div>
+    <div class="card">
+      <img src="https://scontent.fmnl8-1.fna.fbcdn.net/v/t39.30808-6/501004961_2529566670711669_5073544761561003435_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEREBbBitJdLUDRdahfC3v-5ZouQsYbrpHlmi5CxhuukaHm1gHzFoQ3hEITdLZuAiqzWwj75e1fBO5RCKIpQdEm&_nc_ohc=s8G1QTPeT6oQ7kNvwESmcsx&_nc_oc=AdmqHsfViE98eFUifYhGgjsXnJzL5k6X24l_puEyye1FECsOrl1cJ1KKpNq3IN2D-Mc&_nc_zt=23&_nc_ht=scontent.fmnl8-1.fna&_nc_gid=kroIMdXSnaGWT1qTlV4cTw&oh=00_AfLXvRRM4vllvsNwnEzdRGyeS7MyTBeuzhOkD9D558bE4A&oe=683B4098" alt="Classic Muscle Car Collection" />
+      <h3>Muscle Car Collection</h3>
+      <p>A collection celebrating classic muscle cars in miniature.</p>
+    </div>
+    <div class="card">
+      <img src="https://scontent.fmnl8-3.fna.fbcdn.net/v/t39.30808-6/500040471_2529580407376962_8510267695369782928_n.webp?stp=dst-jpg_tt6&_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGflvPFsvnmfd5mPt1T2BCM4cFWJEJItC3hwVYkQki0LVsvTU7kQoBttx0_eNireTnxeABVV9yhPsJm-xinW0OF&_nc_ohc=u5DOQc01-cEQ7kNvwHjJUyC&_nc_oc=AdkSyUENlN_VMhmyCYPbo_kRoIrgpTWYNZz4LSTAu3E9jp19C4mJXukxHWmE_DkGvXY&_nc_zt=23&_nc_ht=scontent.fmnl8-3.fna&_nc_gid=ZRirNO83BgKtqdWJrGCSPg&oh=00_AfLX_4qpj6UFUykW-I2uZ2qD2muLP2m6NqwM-asTN5XgaQ&oe=683B3DD8" alt="Classic Muscle Car Collection" />
+      <h3>Modern Sports</h3>
+      <p>Some of the fastest and sleekest real-world inspired sports cars.</p>
+    </div>
+    <div class="card">
+      <img src="https://scontent.fmnl8-3.fna.fbcdn.net/v/t39.30808-6/501135234_2529581047376898_4148264369050997673_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGCEWCN4xQ4el-UOMSxdvI7Y4fjg6FNNchjh-ODoU01yKNlMM0OwB_IO_s6_ZltfwLgZNSj8GHX4zF7k1Wkio8Q&_nc_ohc=42Cz7IcAMLgQ7kNvwFQclVa&_nc_oc=Adm1ZaLW5lOgHX8o1W2RPWr_uTQSdd6Kop7UT0qymIXppAC8kz3WtvTukmg6r_ogPHw&_nc_zt=23&_nc_ht=scontent.fmnl8-3.fna&_nc_gid=fv6PCAyM0REvLMsRnAn8Ag&oh=00_AfIWwtnHonwvbHO2QcrLoYnm3_vOpWyv5BfFFBi-HIzZOA&oe=683B461A" alt="Fantasy Cars" />
+      <h3>Fantasy Cars</h3>
+      <p>Imaginative and futuristic designs from Hot Wheels' fantasy lineup.</p>
+    </div>
+  </div>
+</main>
+<footer>
+  &copy; 2024 Hot Wheels Toys. All rights reserved.
+</footer>
+</body>
+</html>
+
+
+
+
